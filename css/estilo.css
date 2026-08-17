@@ -5,12 +5,11 @@ body {
     margin: 0;
     padding: 10px;
     display: grid;
+    grid-template-columns: 11rem 1fr 14rem;
     grid-template-areas:
-        "topo"
-        "menu"
-        "conteudo"
-        "lateral"
-        "rodape";
+        "topo   topo     topo"
+        "menu   conteudo lateral"
+        "rodape rodape   rodape";
     gap: 10px;
 }
 
@@ -61,8 +60,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -129,7 +127,7 @@ footer {
     list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
 
@@ -150,23 +148,4 @@ footer {
 .etiqueta {
     color: #8B5E3C;
     font-weight: bold;
-}
-
-@media (min-width: 800px) {
-
-    body {
-        grid-template-columns: 180px 1fr 220px;
-        grid-template-areas:
-            "topo   topo     topo"
-            "menu   conteudo lateral"
-            "rodape rodape   rodape";
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    .cartas, .galeria {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
