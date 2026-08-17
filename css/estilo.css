@@ -137,6 +137,10 @@ footer {
     text-align: center;
 }
 
+.cartas li:hover, .galeria li:hover {
+    border-color: #F5C842;
+}
+
 .cartas img {
     width: 100px;
 }
