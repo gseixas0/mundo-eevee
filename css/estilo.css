@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #3A2A1A;
+    background-color: #F6ECDD;
+    margin: 0;
+    padding: 10px;
+    display: grid;
+    grid-template-areas:
+        "topo"
+        "menu"
+        "conteudo"
+        "lateral"
+        "rodape";
+    gap: 10px;
+}
+
+header {
+    grid-area: topo;
+}
+
+nav {
+    grid-area: menu;
+}
+
+main {
+    grid-area: conteudo;
+}
+
+aside {
+    grid-area: lateral;
+}
+
+footer {
+    grid-area: rodape;
+}
+
+header, nav, main, aside, footer {
+    border: 1px solid #3A2A1A;
+    padding: 15px;
+}
+
+header, nav, aside, footer {
+    background-color: #8B5E3C;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    color: #F5C842;
+    font-size: 32px;
+}
+
+header p, aside, footer {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    color: #F5C842;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover, .ativo {
+    background-color: #F5C842;
+    color: #3A2A1A;
+}
+
+main {
+    background-color: white;
+}
+
+h2 {
+    color: #8B5E3C;
+    font-size: 26px;
+}
+
+h3 {
+    color: #8B5E3C;
+    font-size: 20px;
+}
+
+main img {
+    max-width: 100%;
+}
+
+a {
+    color: #8B5E3C;
+}
+
+dt {
+    font-weight: bold;
+    color: #8B5E3C;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+}
+
+aside h2 {
+    color: #F5C842;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+.destaque {
+    display: block;
+    width: 200px;
+    margin: 0 auto 15px auto;
+}
+
+.cartas, .galeria {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.cartas li, .galeria li {
+    border: 1px solid #C49A6C;
+    padding: 10px;
+    text-align: center;
+}
+
+.cartas img {
+    width: 100px;
+}
+
+.galeria img {
+    width: 100%;
+}
+
+.etiqueta {
+    color: #8B5E3C;
+    font-weight: bold;
+}
+
+@media (min-width: 800px) {
+
+    body {
+        grid-template-columns: 180px 1fr 220px;
+        grid-template-areas:
+            "topo   topo     topo"
+            "menu   conteudo lateral"
+            "rodape rodape   rodape";
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .cartas, .galeria {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
