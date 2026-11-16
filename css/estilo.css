@@ -137,10 +137,6 @@ footer {
     text-align: center;
 }
 
-.cartas li:hover, .galeria li:hover {
-    border-color: #F5C842;
-}
-
 .cartas img {
     width: 100px;
 }
@@ -152,4 +148,112 @@ footer {
 .etiqueta {
     color: #8B5E3C;
     font-weight: bold;
+}
+
+
+[hidden] {
+    display: none !important;
+}
+
+.botao {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #8B5E3C;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.botao:hover:not(:disabled) {
+    background-color: #F5C842;
+    color: #3A2A1A;
+}
+
+.botao:disabled {
+    opacity: 0.5;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #3A2A1A;
+}
+
+.linha-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.mensagem {
+    font-weight: bold;
+}
+
+.acerto {
+    color: #1B5E20;
+}
+
+.erro {
+    color: #B3261E;
+}
+
+.palco {
+    text-align: center;
+}
+
+.misterio {
+    width: 14rem;
+    max-width: 100%;
+    filter: brightness(0);
+}
+
+.misterio.revelada {
+    filter: brightness(1);
+    transition: filter 0.6s;
+}
+
+#lista-pontos li:nth-child(even) {
+    background-color: #F6ECDD;
+}
+
+legend {
+    font-weight: bold;
+    color: #8B5E3C;
+}
+
+.opcoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.opcao {
+    display: block;
+    padding: 0.5rem;
+    border: 1px solid #C49A6C;
+    border-radius: 0.5rem;
+}
+
+.opcao:hover {
+    background-color: #F5C842;
+}
+
+.resultado {
+    text-align: center;
+}
+
+.resultado img {
+    width: 12rem;
+}
+
+.detalhes {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.cartas .botao {
+    margin-top: 0.5rem;
 }
