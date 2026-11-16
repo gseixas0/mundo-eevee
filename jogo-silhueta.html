@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quem é esse Pokémon? - Mundo Eevee</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mundo Eevee</h1>
+        <p>O site das Eeveelutions</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="ficha-eevee.html">Ficha</a></li>
+            <li><a href="evolucoes.html">Evoluções</a></li>
+            <li><a href="como-evoluir.html">Como Evoluir</a></li>
+            <li><a href="pokedex.html">Pokédex</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="regioes.html">Regiões</a></li>
+            <li><a href="times.html">Times</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+            <li><a href="jogo-silhueta.html" class="ativo">Silhueta</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="batalha.html">Batalha</a></li>
+            <li><a href="shiny.html">Shiny</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Quem é esse Pokémon?</h2>
+
+        <p>Descubra qual Eeveelution está escondida na silhueta e digite o nome dela.</p>
+
+        <div class="palco">
+            <img id="img-misterio" class="misterio" src="imagens/eevee.png" alt="Silhueta de um Pokémon misterioso">
+        </div>
+
+        <form id="form-chute" class="linha-form">
+            <label for="campo-chute">Nome do Pokémon</label>
+            <input type="text" id="campo-chute" autocomplete="off">
+            <button type="submit" id="btn-chutar" class="botao">Chutar</button>
+            <button type="button" id="btn-proximo" class="botao">Próximo Pokémon</button>
+        </form>
+
+        <p id="msg-chute" class="mensagem" role="status"></p>
+    </main>
+
+    <aside>
+        <h2>Como jogar</h2>
+        <ul>
+            <li>Veja a silhueta.</li>
+            <li>Digite o nome e clique em Chutar.</li>
+            <li>Clique em Próximo Pokémon para jogar de novo.</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <small>Mundo Eevee — Trabalho de Linguagens para Internet I — IFRS Campus Canoas, 2026</small>
+    </footer>
+
+    <script src="js/silhueta.js"></script>
+</body>
+</html>
